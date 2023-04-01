@@ -1,0 +1,21 @@
+/* ================ FOOTER ================ */
+.app__footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.app__footer svg {
+    font-size: 24px;
+}
+
+.app__footer a:last-child {
+    position: absolute;
+    bottom: 5px;
+    text-decoration: underline;
+}

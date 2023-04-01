@@ -1,13 +1,175 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ================ IMPORTING FONTS & OTHER RESOURCES ================ */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/* ================ VARIABLES ================ */
+:root {
+  /* TYPOGRAPHY */
+  --font-main: 'Raleway', sans-serif;
+  --font-alt: 'IBM Plex Mono', monospace;
+  
+  /* COLOR SCHEME */
+  --color-bg: #0e0e10;
+  --color-text-main: #fff;
+  --color-text-alt: #9C9C9C;
+  --color-subtext: ;
+  --color-primary: #c10005;
+  --color-primary-light: #f40006;
+
+  /* EVENTUAL MISCELLANEOUS COLORS */
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --color-vampireBlack: #080808;
+  --color-eerieBlack: #1B1B1B;
+  --color-spanishGray: #9C9C9C;
+  --color-avocado: #3F8E00;
+  --color-kellyGreen: #62BA1B;
+  --color-smokyBlack: #0e0e10;
+
+  /* ANIMATION VARIABLES */
+  --transition: all 0.4s ease;
+
+  /* MEDIA QUERY VARIABLES */
+  --container-width-xl: 15%;
+  --container-width-lg: 10%;
+  --container-width-md: 7%;
+  --container-width-sm: 5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ================ GLOBAL RULESET ================ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+}
+
+/* ================ GENERAL STYLES ================ */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-white);
+}
+
+.container {
+  padding-left: var(--container-width-lg);
+  padding-right: var(--container-width-lg);
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  padding-top: 8rem;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* ================ MEDIA QUERIES ================ */
+/* EXTRA LARGE DEVICES */
+@media screen and (min-width: 2000px) {
+  .container {
+    padding-left: var(--container-width-xl);
+    padding-right: var(--container-width-xl);
+  }
+}
+
+/* MEDIUM DEVICES */
+@media screen and (max-width: 1150px) {
+  .container {
+    padding-left: var(--container-width-md);
+    padding-right: var(--container-width-md);
+  }
+
+  section {
+      padding-top: 6rem;
+  }
+}
+
+/* SMALL DEVICES */
+@media screen and (max-width: 650px) {
+  .container {
+    padding-left: var(--container-width-sm);
+    padding-right: var(--container-width-sm);
+  }
+
+  section > h2 {
+      margin-bottom: 2rem;
+  }
+}
+
+
+
+/* ================ SCROLL BEHAVIOR & ANIMATIONS ================ */
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
