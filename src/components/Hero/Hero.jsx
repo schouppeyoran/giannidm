@@ -1,6 +1,7 @@
 import React from 'react';
 import './hero.css';
 import {images} from '../../constants';
+import {SlArrowRight} from 'react-icons/sl';
 
 const heroSection = {
   name: 'Gianni De Mulder',
@@ -66,7 +67,15 @@ const Hero = () => {
         <div className="app__hero-content-text">
           <h1>{heroSection.name}</h1>
           <p>{heroSection.introText}</p>
-          <a href={heroSection.ctaRef}>{heroSection.ctaText}</a>
+          <div className='app__ctaButton1'>
+                <a className='app__ctaButton1-cta' href={heroSection.ctaRef}>
+                {heroSection.ctaText}
+                <SlArrowRight className='app__ctaButton1-arrow1'/>
+                <SlArrowRight className='app__ctaButton1-arrow2'/>
+                <SlArrowRight className='app__ctaButton1-arrow3'/>
+                </a>
+            </div>
+
         </div>
         <div className="app__hero-content-img">
           <div className='app__hero-content-img-glow'/>

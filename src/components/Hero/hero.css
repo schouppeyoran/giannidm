@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
+    padding-top: 7vh;
 }
 
 .app__hero-content {
@@ -42,26 +43,81 @@
     max-width: 70%;
 }
 
-.app__hero-content-text a {
-    width: 50%;
-    font-family: var(--font-alt);
-    color: var(--color-text-main);
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 700;
-    background: var(--color-primary);
-    border: 2px solid var(--color-primary-light);
-    padding: 1rem 3rem;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0px 2px 7px 2px var(--color-primary-light);
+.app__ctaButton1 {
+    display: flex;
+    align-items: center;
+    transition: all 1s;
 }
 
-.app__hero-content-text a:hover {
-    background: var(--color-text-alt);
-    border-color: var(--color-text-alt);
-    box-shadow: 0 10px 12px 0px var(--color-text-main);
-    transform: translate(-1%, -1%);
+.app__ctaButton1-cta {
+    color: var(--color-text-main);
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s;
+    box-shadow: 6px 6px 0 var(--color-text-main);
+    transform: skewX(-15deg);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.app__ctaButton1-cta svg {
+    font-size: 36px;
+}
+
+.app__ctaButton1-cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 var(--color-jungleRed);
+
+    .app__ctaButton1-arrow1,
+    .app__ctaButton1-arrow2,
+    .app__ctaButton1-arrow3 {
+        animation: ctaButton1-iconFlash 1.5s infinite;
+    }
+
+    .app__ctaButton1-arrow1 {
+        transform: none;
+        margin-left: 0;
+    }
+
+    .app__ctaButton1-arrow2 {
+        animation-delay: 0.5s;
+    }
+
+    .app__ctaButton1-arrow3 {
+        transform: none;
+        margin-right: 0;
+        animation-delay: 1s;
+    }
+}
+
+.app__ctaButton1-arrow1 {
+    transform: translateX(100%);
+    transition: all 0.5s;
+    margin-left: -36px;
+}
+
+.app__ctaButton1-arrow3 {
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    margin-right: -36px;
+}
+
+@keyframes ctaButton1-iconFlash {
+    0% {
+        color: var(--color-text-alt);
+    }
+
+    50% {
+        color: var(--color-eerieBlack);
+    }
+
+    100% {
+        color: var(--color-text-alt);
+    }
 }
 
 .app__hero-content-img {
