@@ -29,6 +29,7 @@ const About = () => {
             {work.descriptionItems.map((descriptionItem) => (
                 <li className="app__about-sumup-item">
                     <h2>{descriptionItem}</h2>
+                    <div className='app__about-sumup-item-backdrop'/>
                 </li>
             ))}
         </ul>

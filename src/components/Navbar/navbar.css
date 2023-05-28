@@ -25,6 +25,15 @@ nav {
     flex: 1;
 }
 
+.app__navbar-socials svg {
+    color: var(--color-text-main);
+    transition: var(--transition);
+}
+
+.app__navbar-socials svg:hover {
+    color: var(--color-primary);
+}
+
 .app__navbar-links {
     justify-content: flex-start;
     transform: translateX(-0.6rem);

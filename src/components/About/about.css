@@ -24,33 +24,49 @@
 
 .app__about-sumup {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.app__about-sumup-item-backdrop {
+    z-index: 3;
+    position: absolute;
+    width: calc(100% + 1rem);
+    height: calc(100% + 1rem);
+    background: var(--color-eerieBlack);
+    left: 0;
+    top: 0;
+    transform: skewX(20deg);
+}
+
+.app__about-sumup-item-backdrop::before {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50%;
+    bottom: -4px;
+    right: -4px;
+    background: var(--color-eerieBlack);
+    border-right: 4px solid var(--color-primary);
+    border-bottom: 4px solid var(--color-primary);
 }
 
 .app__about-sumup-item {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 0.5rem;
     padding: 1rem;
-    background: var(--color-eerieBlack);
-    border-radius: 1rem;
     transition: var(--transition);
 }
 
-.app__about-sumup-item::before {
-    content: "\2022";
-    font-size: 40px;
-    color: var(--color-primary);
-}
-
 .app__about-sumup-item h2 {
+    z-index: 5;
     font-size: 20px;
-}
-
-.app__about-sumup-item:hover {
-    box-shadow: 0px 3px 8px 0px var(--color-primary);
-    transform: translateX(-1%);
 }
 
 @media screen and (max-width: 1150px) {
