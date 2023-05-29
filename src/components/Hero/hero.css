@@ -237,6 +237,7 @@
     .app__hero-content {
         flex-direction: column-reverse;
         justify-content: flex-start;
+        height: 80%;
     }
 
     .app__hero-content-text {
@@ -258,6 +259,35 @@
     .app__hero-clients-item img {
         width: 3.5rem;
         height: 3.5rem;
+    }
+
+    .app__ctaButton1-cta {
+        font-size: 20px;
+    }
+
+    .app__ctaButton1-cta svg {
+        font-size: 18px;
+    }
+
+    .app__ctaButton1-arrow1 {
+        transform: translateX(100%);
+        transition: all 0.5s;
+        margin-left: -18px;
+    }
+    
+    .app__ctaButton1-arrow3 {
+        transform: translateX(-100%);
+        transition: all 0.5s;
+        margin-right: -18px;
+    }
+
+    .app__hero-content-img {
+        height: 40%;
+    }
+
+    .app__hero-content-img img {
+        height: 100%;
+        width: auto;
     }
 }
 
