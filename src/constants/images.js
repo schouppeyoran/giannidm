@@ -1,4 +1,5 @@
 import hero from '../assets/hero.png';
+import logo from '../assets/logo.png';
 import rogueAvatar from '../assets/rogueAvatar.jpg';
 import chaoticMuchAvatar from '../assets/ChaoticMuch.jfif';
 import dezignfulAvatar from '../assets/Dezignful.png';
@@ -85,6 +86,7 @@ import irltt5Thumbnail from '../assets/irltt5Thumbnail.png';
 
 export default {
     hero,
+    logo,
 
     rogueAvatar,
     chaoticMuchAvatar,

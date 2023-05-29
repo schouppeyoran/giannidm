@@ -1,6 +1,7 @@
 import React from 'react';
 import './footer.css';
 import {MdKeyboardDoubleArrowUp} from 'react-icons/md';
+import { images } from '../../constants';
 
 const Footer = () => {
   return (
@@ -10,7 +11,10 @@ const Footer = () => {
         <h2>Back to top</h2>
       </a>
 
-      <a href="https://www.yoranschouppe.com/" target='_blank'>Website by Yoran Schouppe</a>
+      <a href="https://www.yoranschouppe.com/" target='_blank'>
+        <img src={images.logo} alt="" />
+        Website by <br /> Yoran Schouppe
+      </a>
     </section>
   )
 }
