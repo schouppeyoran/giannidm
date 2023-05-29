@@ -123,6 +123,9 @@
 .app__hero-content-img {
     position: relative;
     width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .app__hero-content-img img {
@@ -131,6 +134,8 @@
     border: 5px solid var(--color-white);
     box-shadow: 0px 10px 25px var(--color-primary);
     animation: float 4s ease-in-out infinite;
+    height: 100%;
+    width: auto;
 }
 
 @keyframes float {
