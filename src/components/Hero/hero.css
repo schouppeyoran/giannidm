@@ -305,6 +305,7 @@
 
     .app__hero-content {
         height: 100%;
+
     }
 
     .app__hero-content-text p {
@@ -319,9 +320,12 @@
 
     .app__hero-content-text {
         margin-top: 1.5rem;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .app__hero-content-img {
         width: 50%;
+        height: 35%;
     }
 }

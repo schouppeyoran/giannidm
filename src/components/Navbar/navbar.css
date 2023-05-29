@@ -145,7 +145,7 @@ nav {
 
     .app__navbar-mobile,
     .app__navbar-socials {
-        gap: 0.2rem;
+        gap: 0.4rem;
     }
 
     .app__navbar-logo {
@@ -154,11 +154,11 @@ nav {
     }
 
     .app__navbar-logo h1 {
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
     }
 
     .app__navbar-logo h2 {
-        font-size: 12px;
+        font-size: 10px;
     }
 }

@@ -102,13 +102,19 @@
         width: 100%;
         margin: 2rem 0;
     }
-
-
 }
 
 @media screen and (max-width: 650px) {
     .app__about p {
         font-size: 12px;
         line-height: 17px;
+    }
+
+    .app__about h1 {
+        text-align: center;
+    }
+
+    .app__about-card { 
+        padding: 0.5rem;
     }
 }
