@@ -1,18 +1,16 @@
 /* ================ IMPORTING FONTS & OTHER RESOURCES ================ */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
 
 /* ================ VARIABLES ================ */
 :root {
   /* TYPOGRAPHY */
-  --font-main: 'Raleway', sans-serif;
-  --font-alt: 'IBM Plex Mono', monospace;
-  
+  --font-main: "Raleway", sans-serif;
+  --font-alt: "IBM Plex Mono", monospace;
+
   /* COLOR SCHEME */
   --color-bg: #0e0e10;
   --color-text-main: #fff;
-  --color-text-alt: #9C9C9C;
+  --color-text-alt: #9c9c9c;
   --color-subtext: ;
   --color-primary: #c10005;
   --color-primary-light: #f40006;
@@ -21,10 +19,10 @@
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
   --color-vampireBlack: #080808;
-  --color-eerieBlack: #1B1B1B;
-  --color-spanishGray: #9C9C9C;
-  --color-avocado: #3F8E00;
-  --color-kellyGreen: #62BA1B;
+  --color-eerieBlack: #1b1b1b;
+  --color-spanishGray: #9c9c9c;
+  --color-avocado: #3f8e00;
+  --color-kellyGreen: #62ba1b;
   --color-smokyBlack: #0e0e10;
 
   /* ANIMATION VARIABLES */
@@ -70,7 +68,11 @@ a:hover {
   padding-right: var(--container-width-lg);
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 500;
 }
 
@@ -80,6 +82,8 @@ h1 {
 
 section {
   padding-top: 8rem;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .btn {
@@ -110,7 +114,6 @@ img {
   object-fit: cover;
 }
 
-
 /* ================ MEDIA QUERIES ================ */
 /* EXTRA LARGE DEVICES */
 @media screen and (min-width: 2000px) {
@@ -128,7 +131,7 @@ img {
   }
 
   section {
-      padding-top: 6rem;
+    padding-top: 6rem;
   }
 }
 
@@ -140,36 +143,34 @@ img {
   }
 
   section > h2 {
-      margin-bottom: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
-
-
 /* ================ SCROLL BEHAVIOR & ANIMATIONS ================ */
 .slide-bottom {
-  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
+    transform: translateY(-25%);
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
+    transform: translateY(-25%);
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
