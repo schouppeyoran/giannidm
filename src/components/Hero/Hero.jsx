@@ -19,6 +19,26 @@ const heroSection = {
 
 const clients = [
   {
+    avatar: images.fakeAnanasAvatar,
+    name: "FakeAnanas",
+    page: "",
+  },
+  {
+    avatar: images.dellorAvatar,
+    name: "Dellor",
+    page: "",
+  },
+  {
+    avatar: images.esterAvatar,
+    name: "Ester",
+    page: "",
+  },
+  {
+    avatar: images.hutchAvatar,
+    name: "Hutch",
+    page: "",
+  },
+  {
     avatar: images.rogueAvatar,
     name: "Rogue",
     page: "",
